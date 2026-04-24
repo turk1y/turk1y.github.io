@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}} | turk1y</title>
+    <link rel="stylesheet" href="{{ROOT}}assets/css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="{{ROOT}}" class="header-title">TURK1Y.GITHUB.IO</a>
+        <div class="header-sub">kiberxavfsizlik kurslari | o'zbek tilida</div>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="sidebar-title">// KURS TARKIBI</div>
+            <div id="nav-container">Loading...</div>
+        </aside>
+
+        <main class="main">
+            <div class="breadcrumb">
+                <a href="{{ROOT}}">Bosh sahifa</a>
+                <span>/</span>
+                <a href="{{COURSE_LINK}}">{{COURSE_NAME}}</a>
+                <span>/</span>
+                <span>{{MODULE_NAME}}</span>
+            </div>
+
+            <div class="progress-wrap">
+                <div class="progress-label">
+                    <span>Umumiy progress</span>
+                    <span id="progress-text">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <h1>{{TITLE}}</h1>
+
+            <div class="lesson-body">
+                {{CONTENT}}
+            </div>
+
+            <div class="lesson-nav">
+                <a href="{{PREV_LINK}}" class="nav-btn {{PREV_DISABLED}}">← Oldingi dars</a>
+                <span class="nav-counter">{{CURRENT}} / {{TOTAL}}</span>
+                <a href="{{NEXT_LINK}}" class="nav-btn {{NEXT_DISABLED}}">Keyingi dars →</a>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        // 2026 turk1y // <a href="https://t.me/csshodiyor" target="_blank">@csshodiyor</a> //
+    </footer>
+
+    <script src="{{ROOT}}assets/js/nav.js"></script>
+</body>
+</html>
